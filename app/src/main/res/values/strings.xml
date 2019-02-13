@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pixabay</string>
+    <string name="point">100</string>
+    <string name="tags">Tags :</string>
+    <string name="tags_value">hoes, feet, selfie</string>
+    <string name="likes_image">likes_image</string>
+    <string name="view_image">view_image</string>
+    <string name="download_image">download_image</string>
+    <string name="large_image">large_image</string>
+</resources>
