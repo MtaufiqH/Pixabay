@@ -33,6 +33,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:layout_gravity="center"
                     android:tint="@color/colorAccent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -42,6 +43,7 @@
                     android:src="@drawable/favorite" />
 
                 <ImageView
+                    android:layout_gravity="center"
                     android:tint="@color/colorAccent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -51,6 +53,7 @@
                     android:src="@drawable/view" />
 
                 <ImageView
+                    android:layout_gravity="center"
                     android:tint="@color/colorAccent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -67,6 +70,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_gravity="center"
                     android:textColor="@color/text_color"
                     android:id="@+id/likes_id"
                     android:layout_width="wrap_content"
@@ -77,6 +81,7 @@
                     tools:text="@string/point" />
 
                 <TextView
+                    android:layout_gravity="center"
                     android:textColor="@color/text_color"
                     android:id="@+id/views_id"
                     android:layout_width="wrap_content"
@@ -87,6 +92,7 @@
                     tools:text="@string/point" />
 
                 <TextView
+                    android:layout_gravity="center"
                     android:textColor="@color/text_color"
                     android:id="@+id/download_id"
                     android:layout_width="wrap_content"
