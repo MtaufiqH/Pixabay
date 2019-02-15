@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onIte
 
         Retrofit retrofit = builder.build();
         mApi = retrofit.create(api.class);
-        Call<Pojo> mdata = mApi.getTheData(BuildConfig.PIXABAY_API,"quotes");
+        Call<Pojo> mdata = mApi.getTheData(BuildConfig.PIXABAY_API,"Kittens");
         mdata.enqueue(new Callback<Pojo>() {
             @Override
             public void onResponse(@NonNull Call<Pojo> call, @NonNull Response<Pojo> response) {
