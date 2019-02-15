@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardElevation="8dp"
     app:cardBackgroundColor="@color/card_color"
-    app:cardCornerRadius="8dp">
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,83 +25,83 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
 
             <LinearLayout
+                android:weightSum="3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_gravity="center"
-                    android:tint="@color/colorAccent"
+                    android:id="@+id/like_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/likes_image"
-                    android:src="@drawable/favorite" />
+                    android:src="@drawable/favorite"
+                    android:tint="@color/colorAccent" />
 
                 <ImageView
-                    android:layout_gravity="center"
-                    android:tint="@color/colorAccent"
+                    android:id="@+id/view_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/view_image"
-                    android:src="@drawable/view" />
+                    android:src="@drawable/view"
+                    android:tint="@color/colorAccent" />
 
                 <ImageView
-                    android:layout_gravity="center"
-                    android:tint="@color/colorAccent"
+                    android:id="@+id/unduh_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/download_image"
-                    android:src="@drawable/download" />
+                    android:src="@drawable/download"
+                    android:tint="@color/colorAccent" />
 
             </LinearLayout>
 
             <LinearLayout
+                android:layout_marginTop="8dp"
+                android:weightSum="3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_gravity="center"
-                    android:textColor="@color/text_color"
+                    android:textSize="14sp"
+                    android:gravity="center"
                     android:id="@+id/likes_id"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:layout_weight="1"
-                    android:gravity="center"
+                    android:textColor="@color/text_color"
                     tools:text="@string/point" />
 
                 <TextView
-                    android:layout_gravity="center"
-                    android:textColor="@color/text_color"
+                    android:textSize="14sp"
+                    android:gravity="center"
                     android:id="@+id/views_id"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:layout_weight="1"
-                    android:gravity="center"
+                    android:textColor="@color/text_color"
                     tools:text="@string/point" />
 
                 <TextView
-                    android:layout_gravity="center"
-                    android:textColor="@color/text_color"
-                    android:id="@+id/download_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
+                    android:textSize="14sp"
                     android:gravity="center"
+                    android:id="@+id/download_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color"
                     tools:text="@string/point" />
-
 
             </LinearLayout>
 
@@ -115,12 +115,14 @@
             android:padding="8dp">
 
             <TextView
+                android:textSize="14sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 tools:text="@string/tags" />
 
             <TextView
+                android:textSize="14sp"
                 android:id="@+id/tags_value_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
